@@ -11,6 +11,11 @@ namespace AIRCREATERS.Web.Controllers
             return View();
         }
 
+        public IActionResult BookNow()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
