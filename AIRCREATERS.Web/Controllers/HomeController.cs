@@ -1,6 +1,8 @@
-using System.Diagnostics;
 using AIRCREATERS.Web.Models;
+using AspNetCoreGeneratedDocument;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 namespace AIRCREATERS.Web.Controllers
 {
@@ -11,7 +13,10 @@ namespace AIRCREATERS.Web.Controllers
             return View();
         }
 
+
         
+
+
 
         public IActionResult Privacy()
         {
@@ -22,6 +27,16 @@ namespace AIRCREATERS.Web.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+
+        [HttpGet]
+
+        public IActionResult BookNow()
+        {
+
+            return View();
+
         }
     }
 }
